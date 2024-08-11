@@ -33,9 +33,5 @@ void setup()
 void loop()
 {
     InIndKit.loop();
-
-
-
-
-
+    
 }
