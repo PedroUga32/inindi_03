@@ -7,9 +7,15 @@
 void setup()
 {
     InIndKit.setup("Wokwi-GUEST", "", "inindkit10");
-    #define amostras 200
-    #define amplitude 2
     
+}
+
+void loop()
+{
+    #define amostras 400
+    #define amplitude 2
+
+    InIndKit.loop();
     double ondatri[amostras];
     int i;
     double passo = (2*amplitude)/(amostras/2);
@@ -28,10 +34,4 @@ void setup()
     }
 
     return 0;
-}
-
-void loop()
-{
-    InIndKit.loop();
-    
 }
